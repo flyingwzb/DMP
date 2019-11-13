@@ -37,7 +37,7 @@ public class AdDoumobServiceImpl implements AdDoumobService {
     /**
      * 豆萌密钥
      */
-    private final static String SECRET = "7d0a523ba74c8d12";
+    private final static String SECRET = "QWERTYUIOPASDFGHJKL";
 
     @Override
     public String deepTranslate(String dkey) {
