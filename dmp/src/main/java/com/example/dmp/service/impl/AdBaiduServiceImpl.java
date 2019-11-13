@@ -24,7 +24,7 @@ import java.util.Map;
 @Slf4j
 public class AdBaiduServiceImpl implements AdBaiduService {
 
-
+    private static final String TOKEN = "QWERTYUIOP";
 
     @Autowired
     private RestTemplate restTemplate;
@@ -33,7 +33,7 @@ public class AdBaiduServiceImpl implements AdBaiduService {
     public void uploadConvertData(String logidUrl) {
         String url = "https://ocpc.baidu.com/ocpcapi/api/uploadConvertData";
         Map<String, Object> postData = new HashMap<>();
-        postData.put("token", "GhjDmWG8OICGG5qChcHqzdzDHezsf5Xu@LQaP0w2jaDBWZQoMR0bxU0vNptmfHLLH");
+        postData.put("token", TOKEN);
 
         Map<String, Object> conversionTypes = new HashMap<>();
         conversionTypes.put("logidUrl", logidUrl);
