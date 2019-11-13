@@ -34,7 +34,4 @@ public class AdBaiduController extends BaseController{
         adBaiduService.uploadConvertData(url);
         return this.success();
     }
-
-
-
 }
