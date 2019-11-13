@@ -24,7 +24,7 @@ import java.util.Map;
 @Slf4j
 public class AdBaiduServiceImpl implements AdBaiduService {
 
-    private static final String TOKEN = "QWERTYUIOP";
+    private static final String TOKEN = "QWERTYUIOPASDFGHJKLZXCVBNM";
 
     @Autowired
     private RestTemplate restTemplate;

@@ -9,6 +9,14 @@ import org.springframework.data.domain.Page;
  * @author houkj
  * 2019年01月13日
  */
+/**
+ * @ClassName:    ResultMongoPageBean
+ * @Description:  接口返回分页结果bean
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 11:42
+ * @Version:      V1.0
+ * @Since:        V1.0
+ */
 @SuppressWarnings("rawtypes")
 public class ResultMongoPageBean<T> extends ResultBean {
 

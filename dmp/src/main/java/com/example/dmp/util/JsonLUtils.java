@@ -22,14 +22,12 @@ import java.time.format.DateTimeFormatter;
 import java.util.TimeZone;
 
 /**
- * 
- * @ClassName JsonLUtils
- * @Description json转换工具类
- * @author houkj
- * @version V1.0
- * @since V2.0
- * @date 2019年3月19日下午6:37:03
- *
+ * @ClassName:    JsonLUtils
+ * @Description:  json转换工具类
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 11:37
+ * @Version:      V1.0
+ * @Since:        V1.0
  */
 public final class JsonLUtils {
 	

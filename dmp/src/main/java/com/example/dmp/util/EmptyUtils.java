@@ -6,14 +6,12 @@ import java.util.Collection;
 import java.util.Map;
 
 /**
- * 
- * @ClassName EmptyUtils
- * @Description 空对象判断工具
- * @author houkj
- * @version V1.0
- * @since V1.0
- * @date 2018年7月19日下午6:36:23
- *
+ * @ClassName:    EmptyUtils
+ * @Description:  空对象判断工具
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 11:41
+ * @Version:      V1.0
+ * @Since:        V1.0
  */
 @SuppressWarnings("rawtypes")
 public class EmptyUtils {

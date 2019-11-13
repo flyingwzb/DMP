@@ -10,11 +10,12 @@ import java.io.Serializable;
 
 
 /**
- * 接口返回结果bean
- *
- * @param <T>
- * @author houkj
- * 2017年10月25日
+ * @ClassName:    ResultBean
+ * @Description:  接口返回结果bean
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 11:43
+ * @Version:      V1.0
+ * @Since:        V1.0
  */
 @ApiModel(value = "接口返回")
 @Data

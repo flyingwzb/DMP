@@ -4,10 +4,12 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * 分页bean
- * 
- * @author houkj
- * 2017年10月25日
+ * @ClassName:    PageMsg
+ * @Description:  分页bean
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 11:43
+ * @Version:      V1.0
+ * @Since:        V1.0
  */
 @Data
 public class PageMsg {
