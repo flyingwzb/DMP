@@ -1,0 +1,14 @@
+## 开发环境
+server:
+  port: 8602
+
+
+spring:
+  data:
+    ## mongodb配置
+    mongodb:
+      host: 10.176.16.54
+      port: 27017
+      database: res_db_sta
+      username: res_db_sta_rw
+      password: XhWfFJYPm87akGTy3v20bOiwRUgCLr
