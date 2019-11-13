@@ -3,12 +3,12 @@ package com.example.dmp.util;
 import java.security.MessageDigest;
 
 /**
- * @author renqy
- * @version V1.0
- * @ClassName MD5Utils
- * @Description
- * @date 2019/5/13 17:40
- * @since V1.0
+ * @ClassName:    MD5Utils
+ * @Description:  TODO
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 16:38
+ * @Version:      V1.0
+ * @Since:        V1.0
  */
 public class MD5Utils {
 

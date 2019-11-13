@@ -5,14 +5,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * 
- * @ClassName RestTemplateConfig
- * @Description rest请求模板配置
- * @author houkj
- * @version V1.0
- * @since V1.0
- * @date 2018年6月14日上午11:55:09
- *
+ * @ClassName:    RestTemplateConfig
+ * @Description:  rest请求模板配置
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 16:40
+ * @Version:      V1.0
+ * @Since:        V1.0
  */
 @Configuration
 public class RestTemplateConfig {

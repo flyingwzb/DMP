@@ -1,14 +1,12 @@
 package com.example.dmp.enums;
 
 /**
- * 
- * @ClassName ClientType
- * @Description 客户端类型
- * @author houkj
- * @version V1.0
- * @since V1.0
- * @date 2018年6月12日下午2:15:35
- *
+ * @ClassName:    ClientTypeEnum
+ * @Description:  客户端类型
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 16:40
+ * @Version:      V1.0
+ * @Since:        V1.0
  */
 public enum ClientTypeEnum {
 	

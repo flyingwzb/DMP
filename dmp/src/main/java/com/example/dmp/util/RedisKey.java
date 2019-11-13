@@ -3,14 +3,12 @@ package com.example.dmp.util;
 import com.example.dmp.enums.ClientTypeEnum;
 
 /**
- * 
- * @ClassName RedisKey
- * @Description redis缓存KEY 定义
- * @author houkj
- * @version V1.0
- * @since V1.0
- * @date 2018年7月19日下午6:35:18
- *
+ * @ClassName:    RedisKey
+ * @Description:  redis缓存KEY
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 16:38
+ * @Version:      V1.0
+ * @Since:        V1.0
  */
 public class RedisKey {
 

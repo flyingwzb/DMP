@@ -11,14 +11,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 
- * @ClassName StringLUtils
- * @Description 字符串工具类
- * @author houkj
- * @version V1.0
- * @since V1.0
- * @date 2018年7月19日下午6:39:23
- *
+ * @ClassName:    StringLUtils
+ * @Description:  字符串工具类
+ * @Author:       王志彪(Will Wang)
+ * @Date:         2019/11/13 16:37
+ * @Version:      V1.0
+ * @Since:        V1.0
  */
 public class StringLUtils {
 
