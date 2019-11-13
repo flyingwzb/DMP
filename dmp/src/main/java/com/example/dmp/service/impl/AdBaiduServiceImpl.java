@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  * @className: AdBaiduServiceImpl
- * @description: 百度广告推广数据接入接口
+ * @description: 百度广告主回传转化数据接口
  * @author: wangzb01
  * @version: V1.0
  * @since: V1.0
