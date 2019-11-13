@@ -1,11 +1,11 @@
 package com.example.dmp.service.impl;
 
 import com.example.dmp.service.AdBaiduService;
+import com.example.dmp.util.HttpUtils;
 import com.example.dmp.util.JsonLUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -41,7 +41,7 @@ public class AdBaiduServiceImpl implements AdBaiduService {
         postData.put("conversionTypes", conversionTypes);
         String req = JsonLUtils.toJSon(postData);
         log.info("json:" + req);
-        HttpEntity<String> formEntity = new HttpEntity<>(req, this.setHeaders());
+        HttpEntity<String> formEntity = new HttpEntity<>(req, HttpUtils.setHeaders());
         Map<String, Object> resultMap = restTemplate.postForObject(url, formEntity, Map.class);
         log.info("请求结果：{}", resultMap);
         Map<String, Object> header = (Map<String, Object>) resultMap.get("header");
@@ -53,11 +53,4 @@ public class AdBaiduServiceImpl implements AdBaiduService {
         }
     }
 
-    private HttpHeaders setHeaders() {
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Content-Type", "application/json; charset=UTF-8");
-        headers.add("Accept", "application/json");
-        headers.add("Content-Encoding", "UTF-8");
-        return headers;
-    }
 }
