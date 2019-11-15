@@ -17,5 +17,5 @@ public interface AdWeChatService {
      * @param openId
      * @return void
      */
-    void addUserActions(String accessToken,String openId);
+    void addUserActions(String accessToken,String openId,String pageUrl);
 }

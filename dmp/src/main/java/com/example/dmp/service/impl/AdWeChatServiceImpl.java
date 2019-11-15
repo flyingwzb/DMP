@@ -11,7 +11,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -35,29 +37,35 @@ public class AdWeChatServiceImpl implements AdWeChatService {
     private RestTemplate restTemplate;
 
     @Override
-    public void addUserActions(String accessToken,String openId) {
+    public void addUserActions(String accessToken,String openId,String pageUrl) {
         String url = "https://api.weixin.qq.com/marketing/user_actions/add?version=v1.0&access_token=" + accessToken;
-        Map<String, Object> postData = new HashMap<>();
-        postData.put("user_action_set_id", USER_ACTION_SET_ID);
+
+        Map<String, List<Map<String, Object>>> postData = new HashMap<>();
+        Map<String, Object> actions = new HashMap<>();
+
+        actions.put("user_action_set_id", USER_ACTION_SET_ID);
         // 发生行为转换的URL
-        postData.put("url", "https://res-cust.91datong.com/tf");
+        actions.put("url", pageUrl);
         // 当前时间的时间戳，单位秒
-        postData.put("action_time", Instant.now().getEpochSecond());
+        actions.put("action_time", Instant.now().getEpochSecond());
         // COMPLETE_ORDER（下单）、RESERVATION（表单预约）、REGISTER（注册）
-        postData.put("action_type", "RESERVATION");
+        actions.put("action_type", "RESERVATION");
 
         Map<String, String> userId = new HashMap<>();
         userId.put("wechat_app_id", WECHAT_APP_ID);
         userId.put("wechat_openid", openId);
-        postData.put("user_id", userId);
+        actions.put("user_id", userId);
 
         Map<String, String> actionParam = new HashMap<>();
         // 转化数据发生的渠道，Biz代表公众号，Web代表非公众号的其他渠道
         actionParam.put("source", "Biz");
         // 归因方式，0按点击行为归因，1按关注行为归因
         actionParam.put("claim_type", "1");
-        postData.put("action_param", actionParam);
+        actions.put("action_param", actionParam);
 
+        List<Map<String, Object>> mapList = new ArrayList<>();
+        mapList.add(actions);
+        postData.put("actions", mapList);
         String req = JsonLUtils.toJSon(postData);
         log.info("json:" + req);
         HttpEntity<String> formEntity = new HttpEntity<>(req, HttpUtils.setHeaders());
