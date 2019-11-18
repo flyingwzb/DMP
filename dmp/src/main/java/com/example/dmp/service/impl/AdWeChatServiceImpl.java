@@ -29,7 +29,7 @@ import java.util.Map;
 public class AdWeChatServiceImpl implements AdWeChatService {
 
     // 数据源ID
-    private static final Integer USER_ACTION_SET_ID = 1109624852;
+    private static final Integer USER_ACTION_SET_ID = 1234567890;
 
     private static final String WECHAT_APP_ID = "QWERTYUIOPASDFGHJKL";
 

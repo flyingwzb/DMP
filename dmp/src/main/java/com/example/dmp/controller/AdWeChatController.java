@@ -22,7 +22,7 @@ public class AdWeChatController extends BaseController {
     @ApiOperation(value = "微信回传用户行为数据", notes = "微信回传用户行为数据")
     @GetMapping("/user/action")
     public ResultBean<String> addUserAction() {
-        adWeChatService.addUserActions("","");
+        adWeChatService.addUserActions("","","");
         return this.success();
     }
 }
